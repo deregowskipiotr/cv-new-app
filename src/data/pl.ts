@@ -47,35 +47,35 @@ export const contentPL = {
     competencies: [
       {
         id: "sales-development",
-        number: "01",
+        number: "1",
         iconKey: "sales-development",
         title: "Rozwój sprzedaży i biznesu",
         description: "Realizacja planów sprzedażowych, rozwój dystrybucji i pozyskiwanie nowych klientów. Przykład: nawiązanie współpracy z Carrefour w kategorii napojów bezalkoholowych."
       },
       {
         id: "key-accounts",
-        number: "02",
+        number: "2",
         iconKey: "key-accounts",
         title: "Kluczowi klienci i negocjacje",
         description: "Budowanie relacji handlowych, negocjowanie warunków współpracy i rozwój portfolio produktów. Przykład: dwukrotne zwiększenie liczby SKU w kategorii win w sieci Auchan."
       },
       {
         id: "commercial-performance",
-        number: "03",
+        number: "3",
         iconKey: "commercial-performance",
         title: "Wyniki i efektywność handlowa",
         description: "Analiza sprzedaży i marż, planowanie działań oraz kontrola budżetów marketingowych. Łączenie celów handlowych z rentownością i skuteczną realizacją ustaleń."
       },
       {
         id: "channels-distribution",
-        number: "04",
+        number: "4",
         iconKey: "channels-distribution",
         title: "Znajomość kanałów i dystrybucji",
         description: "Doświadczenie w Traditional Trade, HoReCa, B2B i nowoczesnych sieciach handlowych. Współpraca z lokalnymi dystrybutorami, detalistami, producentami oraz klientami gastronomicznymi."
       },
       {
         id: "leadership-mindset",
-        number: "05",
+        number: "5",
         iconKey: "leadership-mindset",
         title: "Przywództwo i nowoczesne podejście",
         description: "Doświadczenie w zarządzaniu 12-osobowym zespołem oraz współpracy między działami. Rozwijanie kompetencji w obszarze AI i technologii, w tym ukończenie programu Umiejętności Jutra AI (Google & SGH)."

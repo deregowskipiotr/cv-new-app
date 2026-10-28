@@ -46,35 +46,35 @@ export const contentEN = {
     competencies: [
       {
         id: "sales-development",
-        number: "01",
+        number: "1",
         iconKey: "sales-development",
         title: "Sales & Business Development",
         description: "Executing ambitious revenue targets, expanding channel distribution, and winning key accounts. Example: initiating direct supplier cooperation with Carrefour in the non-alcoholic beverages segment."
       },
       {
         id: "key-accounts",
-        number: "02",
+        number: "2",
         iconKey: "key-accounts",
         title: "Key Account Management & Negotiation",
         description: "Cultivating key client partnerships, negotiating annual commercial terms, and scaling brand portfolios. Example: doubling wine SKU listings at Auchan."
       },
       {
         id: "commercial-performance",
-        number: "03",
+        number: "3",
         iconKey: "commercial-performance",
         title: "Commercial Performance",
         description: "In-depth sales and margin analysis, tactical trade planning, and marketing budget governance. Aligning commercial goals with bottom-line profitability and reliable execution."
       },
       {
         id: "channels-distribution",
-        number: "04",
+        number: "4",
         iconKey: "channels-distribution",
         title: "Sales Channels & Distribution",
         description: "Deep expertise across Traditional Trade, HoReCa, B2B, and modern retail. Close cooperation with regional distributors, retailers, producers, and gastronomy clients."
       },
       {
         id: "leadership-mindset",
-        number: "05",
+        number: "5",
         iconKey: "leadership-mindset",
         title: "Leadership & Modern Business Mindset",
         description: "Direct leadership of a 12-person sales team and close cross-departmental coordination. Continuously developing modern technology and AI capabilities, including graduating from the Umiejętności Jutra AI program (Google & SGH)."

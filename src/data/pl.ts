@@ -1,6 +1,8 @@
 import type { NavTranslations } from '@/types/navigation';
 import type { AboutContent } from '@/types/about';
 import type { ProjectsContent } from '@/types/projects';
+import type { SkillsContent } from '@/types/skills';
+import type { ExperienceContent } from '@/types/experience';
 
 export const contentPL = {
   nav: {
@@ -35,7 +37,7 @@ export const contentPL = {
     headline: "Doświadczenie, relacje, rozwój.",
     paragraphs: [
       "Mam ponad 18 lat doświadczenia w sprzedaży i rozwoju biznesu w branży FMCG. Przeszedłem pełną ścieżkę zawodową — od przedstawiciela handlowego, przez zarządzanie 12-osobowym zespołem sprzedaży, po współpracę z kluczowymi klientami.",
-      "Pracowałem w różnych kanałach sprzedaży: Traditional Trade, HoReCa, B2B i nowoczesnych sieciach handlowych, rozwijając współpracę zarówno z klientami detalicznymi, jak i dystrybutorami.",
+      "Pracowałem w różnych kanałach sprzedaży: Rynek Tradycyjny, HoReCa, B2B i nowoczesnych sieciach handlowych, rozwijając współpracę zarówno z klientami detalicznymi, jak i dystrybutorami.",
       "Łączę umiejętności negocjacyjne i budowanie długofalowych relacji z analizą wyników, zarządzaniem budżetami oraz realizacją celów sprzedażowych.",
       "Stawiam na samodzielność, partnerskie podejście i ciągły rozwój. Doświadczenie handlowe uzupełniam wiedzą o AI i nowoczesnych narzędziach, szukając praktycznych sposobów na usprawnianie procesów biznesowych."
     ],
@@ -71,7 +73,7 @@ export const contentPL = {
         number: "4",
         iconKey: "channels-distribution",
         title: "Znajomość kanałów i dystrybucji",
-        description: "Doświadczenie w Traditional Trade, HoReCa, B2B i nowoczesnych sieciach handlowych. Współpraca z lokalnymi dystrybutorami, detalistami, producentami oraz klientami gastronomicznymi."
+        description: "Doświadczenie w obsłudze kanałów: Rynek Tradycyjny, HoReCa, B2B i nowoczesnych sieciach handlowych. Współpraca z lokalnymi dystrybutorami, detalistami, producentami oraz klientami gastronomicznymi."
       },
       {
         id: "leadership-mindset",
@@ -121,4 +123,176 @@ export const contentPL = {
       },
     ],
   } as ProjectsContent,
+  skills: {
+    eyebrow: "Umiejętności i nie tylko",
+    headline: "Umiejętności i nie tylko",
+    intro: "Kompetencje handlowe, ciągły rozwój i ciekawość, która to napędza.",
+    skillsHeading: "Umiejętności zawodowe",
+    languagesHeading: "Języki",
+    interestsHeading: "Zainteresowania i rozwój",
+    credentialsHeading: "Kursy i szkolenia",
+    skillGroups: [
+      {
+        id: "commercial-analytical",
+        label: "Handlowe i analityczne",
+        items: [
+          "Analiza danych sprzedażowych",
+          "Analiza potrzeb klientów",
+          "Analiza trendów rynkowych i działań konkurencji",
+        ],
+      },
+      {
+        id: "sales-relationships",
+        label: "Sprzedaż i relacje",
+        items: [
+          "Umiejętności negocjacyjne",
+          "Rozwinięte zdolności komunikacyjne",
+          "Budowanie i rozwijanie trwałych relacji biznesowych",
+        ],
+      },
+      {
+        id: "work-approach",
+        label: "Organizacja pracy",
+        items: [
+          "Samodzielna i zespołowa organizacja pracy",
+          "Zarządzanie czasem i priorytetami",
+          "Dobra organizacja pracy",
+        ],
+      },
+    ],
+    languages: [
+      { name: "Polski", level: "Język ojczysty" },
+      { name: "Angielski", level: "B1/B2 — stale rozwijany" },
+    ],
+    interests: [
+      { text: "Sztuczna inteligencja i jej praktyczne zastosowania w życiu codziennym i pracy" },
+      { text: "Tworzenie stron i aplikacji internetowych z użyciem JavaScript" },
+      { text: "Piłka nożna — szczególnie liga hiszpańska" },
+      { text: "Kino — David Lynch, Jim Jarmusch, Quentin Tarantino" },
+    ],
+    credentials: [
+      {
+        id: "umiejetnosci-jutra",
+        title: "Umiejętności Jutra AI",
+        provider: "Google & SGH",
+        note: "AI i praktyczne zastosowania w biznesie",
+      },
+      {
+        id: "kodilla-bootcamp",
+        title: "Bootcamp Front-end",
+        provider: "Kodilla",
+        topics: ["HTML", "CSS", "JavaScript", "Git", "ES6", "AJAX", "Redux", "React Router"],
+      },
+      {
+        id: "excel-course",
+        title: "Microsoft Excel — poziom średniozaawansowany / zaawansowany",
+        provider: "Expose",
+      },
+      {
+        id: "sales-management",
+        title: "Szkolenie z zarządzania zespołem sprzedaży",
+        provider: "Szkolenie wewnętrzne",
+      },
+    ],
+  } as SkillsContent,
+  experience: {
+    eyebrow: "Doświadczenie",
+    headline: "Od pracy w terenie po strategiczny rozwój",
+    intro: "Ponad 18 lat doświadczenia handlowego w branży FMCG, HoReCa, B2B i zarządzaniu kluczowymi klientami. Ścieżka zawodowa oparta na relacjach z klientami, realizacji planów sprzedażowych, kierowaniu zespołem i rozwoju biznesu.",
+    stats: [
+      { value: "18+", label: "Lat w branży FMCG", iconKey: "experience" },
+      { value: "12", label: "Osób w zespole sprzedaży", iconKey: "team" },
+      { value: "5", label: "Etapów kariery", iconKey: "milestones" },
+      { value: "4", label: "Główne kanały sprzedaży", iconKey: "channels" },
+    ],
+    timelineHeading: "Ścieżka zawodowa",
+    milestones: [
+      {
+        id: "sales-rep",
+        number: "01",
+        title: "Przedstawiciel Handlowy",
+        company: "Verte sp. z o.o.",
+        period: "2004–2006",
+        summary: "Budowanie fundamentów relacji handlowych i bezpośrednia realizacja celów sprzedażowych.",
+      },
+      {
+        id: "horeca-rep",
+        number: "02",
+        title: "Przedstawiciel Handlowy, HoReCa",
+        company: "Carey Agri / CEDC / Eurocash S.A.",
+        period: "2006–2015",
+        summary: "Rozwój relacji z klientami, dystrybucji i egzekucji handlowej w kanale gastronomicznym.",
+      },
+      {
+        id: "regional-manager",
+        number: "03",
+        title: "Regionalny Kierownik Sprzedaży",
+        company: "Eurocash S.A. – Premium Distributors",
+        period: "2015–2017",
+        summary: "Przejście od sprzedaży indywidualnej do zarządzania 12-osobowym zespołem i odpowiedzialności regionalnej.",
+        highlight: true,
+      },
+      {
+        id: "kam-b2b",
+        number: "04",
+        title: "Key Account Manager, B2B",
+        company: "CEDC International",
+        period: "2017–2020",
+        summary: "Rozwijanie relacji B2B i zarządzanie współpracą handlową w wielu kanałach sprzedaży.",
+      },
+      {
+        id: "junior-kam",
+        number: "05",
+        title: "Junior Key Account Manager",
+        company: "North Coast S.A.",
+        period: "2023–2025",
+        summary: "Rozwój relacji z kluczowymi klientami sieciowymi, negocjacje warunków handlowych i rozwój kategorii.",
+        isFeatured: true,
+      },
+    ],
+    featured: {
+      period: "2023–2025",
+      title: "Junior Key Account Manager",
+      company: "North Coast S.A.",
+      description: "Bezpośrednia współpraca z kluczowymi klientami w kategoriach alkoholi, win i napojów bezalkoholowych. Rozwijanie nowych relacji handlowych i współtworzenie strategii rozwoju kategorii.",
+      responsibilities: [
+        { text: "Nawiązanie i rozwój współpracy z nowymi klientami — m.in. Carrefour w kategorii napojów bezalkoholowych" },
+        { text: "Prowadzenie negocjacji handlowych oraz przygotowywanie i realizacja planów sprzedaży" },
+        { text: "Współtworzenie i wdrażanie strategii biznesowych u klientów sieciowych (Auchan, Duka, Carrefour)" },
+        { text: "Ścisła współpraca z działami Trade Marketingu, Finansów i Logistyki" },
+        { text: "Realizacja dodatkowych działań wspierających sprzedaż, w tym targów branżowych i festiwali wina" },
+      ],
+    },
+    impactHeading: "Wybrane osiągnięcia",
+    impactItems: [
+      {
+        id: "auchan",
+        client: "Auchan",
+        category: "Rozwój portfolio win",
+        description: "Dwukrotne zwiększenie liczby SKU w kategorii win w ciągu 2 lat dzięki optymalizacji oferty i partnerstwu z dostawcami.",
+        iconKey: "store",
+      },
+      {
+        id: "carrefour",
+        client: "Carrefour",
+        category: "Nowa współpraca handlowa",
+        description: "Otwarcie współpracy w kategorii napojów bezalkoholowych i zbudowanie solidnych fundamentów pod dalszy wzrost.",
+        iconKey: "cart",
+      },
+      {
+        id: "inout",
+        client: "In&Out",
+        category: "Rozwój kategorii",
+        description: "Wprowadzenie kategorii alkoholi mocnych, win oraz napojów bezalkoholowych, poszerzające ofertę i wartość koszyka.",
+        iconKey: "bottle",
+      },
+      {
+        id: "leadership",
+        client: "Regionalne przywództwo",
+        category: "Zarządzanie zespołem",
+        description: "Kierowanie 12-osobowym zespołem sprzedaży, planowanie działań w regionie, kontrola wyników i budżetów marketingowych.",
+        iconKey: "team",
+      },
+    ],
+  } as ExperienceContent,
 };

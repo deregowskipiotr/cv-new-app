@@ -132,7 +132,7 @@ export const Hero: React.FC<HeroProps> = ({ currentLang, onDownloadCv }) => {
                 cx="300"
                 cy="285"
                 rx="235"
-                ry="210"
+                ry="230"
                 transform="rotate(-18 300 285)"
                 stroke="url(#goldOrbitGrad1)"
                 strokeWidth="1.2"
@@ -213,7 +213,7 @@ export const Hero: React.FC<HeroProps> = ({ currentLang, onDownloadCv }) => {
             </svg>
 
             {/* ROTATING LUXURY MONOGRAM EMBLEM / STAMP (Top Right - as in template) */}
-            <div className="absolute -top-3 -right-2 sm:-right-6 md:-right-8 w-24 h-24 sm:w-28 sm:h-28 z-20 pointer-events-none select-none">
+            <div className="absolute -top-3 -right-2 sm:-right-6 md:-right-9 w-24 h-24 sm:w-28 sm:h-28 z-20 pointer-events-none select-none">
               <svg className="w-full h-full animate-[spin_40s_linear_infinite]" viewBox="0 0 120 120">
                 <defs>
                   <path

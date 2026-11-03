@@ -1,6 +1,8 @@
 import type { NavTranslations } from '@/types/navigation';
 import type { AboutContent } from '@/types/about';
 import type { ProjectsContent } from '@/types/projects';
+import type { SkillsContent } from '@/types/skills';
+import type { ExperienceContent } from '@/types/experience';
 
 export const contentEN = {
   nav: {
@@ -120,4 +122,176 @@ export const contentEN = {
       },
     ],
   } as ProjectsContent,
+  skills: {
+    eyebrow: "Skills & Beyond",
+    headline: "Skills & Beyond",
+    intro: "Commercial expertise, ongoing learning, and the curiosity that drives both.",
+    skillsHeading: "Professional Skills",
+    languagesHeading: "Languages",
+    interestsHeading: "Interests & Continuous Learning",
+    credentialsHeading: "Learning & Credentials",
+    skillGroups: [
+      {
+        id: "commercial-analytical",
+        label: "Commercial & Analytical",
+        items: [
+          "Sales data analysis",
+          "Client needs assessment",
+          "Market trend and competitor analysis",
+        ],
+      },
+      {
+        id: "sales-relationships",
+        label: "Sales & Relationships",
+        items: [
+          "Negotiation",
+          "Communication",
+          "Building and sustaining long-term business relationships",
+        ],
+      },
+      {
+        id: "work-approach",
+        label: "Work Approach",
+        items: [
+          "Independent and collaborative work organisation",
+          "Time management and prioritisation",
+          "Structured approach to daily work",
+        ],
+      },
+    ],
+    languages: [
+      { name: "Polish", level: "Native" },
+      { name: "English", level: "B1/B2 — ongoing improvement" },
+    ],
+    interests: [
+      { text: "Artificial Intelligence and its practical applications in everyday life and work" },
+      { text: "Building websites and applications with JavaScript" },
+      { text: "Football — particularly La Liga" },
+      { text: "Cinema — David Lynch, Jim Jarmusch, Quentin Tarantino" },
+    ],
+    credentials: [
+      {
+        id: "umiejetnosci-jutra",
+        title: "Umiejętności Jutra AI",
+        provider: "Google & SGH",
+        note: "AI and practical applications in Business",
+      },
+      {
+        id: "kodilla-bootcamp",
+        title: "Front-end Bootcamp",
+        provider: "Kodilla",
+        topics: ["HTML", "CSS", "JavaScript", "Git", "ES6", "AJAX", "Redux", "React Router"],
+      },
+      {
+        id: "excel-course",
+        title: "Microsoft Excel — Intermediate / Advanced",
+        provider: "Expose",
+      },
+      {
+        id: "sales-management",
+        title: "Sales Team Management Training",
+        provider: "Internal training",
+      },
+    ],
+  } as SkillsContent,
+  experience: {
+    eyebrow: "Experience",
+    headline: "From the Field to Strategic Growth",
+    intro: "Over 18 years of commercial experience across FMCG, HoReCa, B2B and Key Account Management. A career built on customer relationships, sales execution, team leadership and commercial development.",
+    stats: [
+      { value: "18+", label: "Years in FMCG", iconKey: "experience" },
+      { value: "12", label: "Team Members Led", iconKey: "team" },
+      { value: "5", label: "Career Milestones", iconKey: "milestones" },
+      { value: "4", label: "Key Sales Channels", iconKey: "channels" },
+    ],
+    timelineHeading: "Career Progression",
+    milestones: [
+      {
+        id: "sales-rep",
+        number: "01",
+        title: "Sales Representative",
+        company: "Verte sp. z o.o.",
+        period: "2004–2006",
+        summary: "Building the foundations of commercial relationships and hands-on sales execution.",
+      },
+      {
+        id: "horeca-rep",
+        number: "02",
+        title: "Sales Representative, HoReCa",
+        company: "Carey Agri / CEDC / Eurocash S.A.",
+        period: "2006–2015",
+        summary: "Developing customer relationships, distribution and commercial execution across the HoReCa channel.",
+      },
+      {
+        id: "regional-manager",
+        number: "03",
+        title: "Regional Sales Manager",
+        company: "Eurocash S.A. – Premium Distributors",
+        period: "2015–2017",
+        summary: "Moving from individual sales execution to team leadership and regional commercial responsibility.",
+        highlight: true,
+      },
+      {
+        id: "kam-b2b",
+        number: "04",
+        title: "Key Account Manager, B2B",
+        company: "CEDC International",
+        period: "2017–2020",
+        summary: "Developing B2B relationships and managing commercial cooperation across multiple customer channels.",
+      },
+      {
+        id: "junior-kam",
+        number: "05",
+        title: "Junior Key Account Manager",
+        company: "North Coast S.A.",
+        period: "2023–2025",
+        summary: "Developing key customer relationships, negotiating commercial conditions and supporting category growth.",
+        isFeatured: true,
+      },
+    ],
+    featured: {
+      period: "2023–2025",
+      title: "Junior Key Account Manager",
+      company: "North Coast S.A.",
+      description: "Direct cooperation with active customers in spirits, wine and non-alcoholic beverages. Developing new customer relationships and supporting category growth across a diverse product portfolio.",
+      responsibilities: [
+        { text: "Developing new customer cooperation — including Carrefour in the non-alcoholic beverages category" },
+        { text: "Conducting commercial negotiations and preparing sales plans" },
+        { text: "Co-creating and implementing customer business strategies across retail networks" },
+        { text: "Supporting trade marketing, finance and logistics coordination" },
+        { text: "Implementing additional sales-support activities including trade fairs and wine festivals" },
+      ],
+    },
+    impactHeading: "Selected Impact",
+    impactItems: [
+      {
+        id: "auchan",
+        client: "Auchan",
+        category: "Wine Portfolio Development",
+        description: "Doubled the number of wine SKUs through range optimisation and supplier partnerships.",
+        iconKey: "store",
+      },
+      {
+        id: "carrefour",
+        client: "Carrefour",
+        category: "New Customer Cooperation",
+        description: "Developed new cooperation in the non-alcoholic beverages category, building a foundation for long-term growth.",
+        iconKey: "cart",
+      },
+      {
+        id: "inout",
+        client: "In&Out",
+        category: "Category Development",
+        description: "Introduced spirits, wines and non-alcoholic beverage categories, expanding the product offering and increasing customer value.",
+        iconKey: "bottle",
+      },
+      {
+        id: "leadership",
+        client: "Regional Sales Leadership",
+        category: "Team Management",
+        description: "Led a 12-person sales team, planning regional activities, monitoring performance and managing marketing budgets.",
+        iconKey: "team",
+      },
+    ],
+  } as ExperienceContent,
 };

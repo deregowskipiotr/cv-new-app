@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Menu, X } from 'lucide-react';
 import { MetallicButton } from '../ui/MetallicButton';
 import { NAVIGATION_LINKS } from '../config/navigation';
@@ -16,12 +16,22 @@ export const Navbar: React.FC<NavbarProps> = ({ currentLang, onToggleLang, onDow
   const [scrolled, setScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState('home');
 
+  // Programmatic navigation lock to avoid intermediate section flashing during smooth scroll
+  const isNavigatingRef = useRef<string | null>(null);
+  const navigationTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+
   const t = currentLang === 'EN' ? contentEN.nav : contentPL.nav;
 
   // Handle sticky navbar border/shadow and robust active section highlighting on scroll
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 20);
+
+      // If a programmatic navigation from a link click is currently in progress,
+      // lock the active section so intermediate sections don't cause flickering.
+      if (isNavigatingRef.current) {
+        return;
+      }
 
       // Top of the page: always highlight 'home'
       if (window.scrollY < 80) {
@@ -50,9 +60,31 @@ export const Navbar: React.FC<NavbarProps> = ({ currentLang, onToggleLang, onDow
       setActiveSection(current);
     };
 
+    const handleScrollEnd = () => {
+      isNavigatingRef.current = null;
+    };
+
+    const handleUserInterrupt = () => {
+      if (isNavigatingRef.current) {
+        isNavigatingRef.current = null;
+      }
+    };
+
     window.addEventListener('scroll', handleScroll, { passive: true });
+    window.addEventListener('scrollend', handleScrollEnd, { passive: true });
+    window.addEventListener('wheel', handleUserInterrupt, { passive: true });
+    window.addEventListener('touchstart', handleUserInterrupt, { passive: true });
     handleScroll();
-    return () => window.removeEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('scrollend', handleScrollEnd);
+      window.removeEventListener('wheel', handleUserInterrupt);
+      window.removeEventListener('touchstart', handleUserInterrupt);
+      if (navigationTimeoutRef.current) {
+        clearTimeout(navigationTimeoutRef.current);
+      }
+    };
   }, []);
 
   const handleNavClick = (
@@ -61,6 +93,14 @@ export const Navbar: React.FC<NavbarProps> = ({ currentLang, onToggleLang, onDow
     id: string
   ) => {
     setActiveSection(id);
+    isNavigatingRef.current = id;
+    if (navigationTimeoutRef.current) {
+      clearTimeout(navigationTimeoutRef.current);
+    }
+    navigationTimeoutRef.current = setTimeout(() => {
+      isNavigatingRef.current = null;
+    }, 1000);
+
     if (id === 'home') {
       e.preventDefault();
       window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -217,16 +257,15 @@ export const Navbar: React.FC<NavbarProps> = ({ currentLang, onToggleLang, onDow
 
         {/* Mobile Bottom Action */}
         <div className="w-full pt-4 border-t border-(--color-decor)/20">
-          
-            <MetallicButton className='w-full text-center' onClick={() => {
-              setIsOpen(false);
-              onDownloadCv();
-            }}>
-              {t.letsTalk}
-            </MetallicButton>
-          
+          <MetallicButton className='w-full text-center' onClick={() => {
+            setIsOpen(false);
+            onDownloadCv();
+          }}>
+            {t.letsTalk}
+          </MetallicButton>
         </div>
       </div>
     </>
   );
 };
+export default Navbar;

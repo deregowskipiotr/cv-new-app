@@ -134,7 +134,7 @@ export const Experience: React.FC<ExperienceProps> = ({ currentLang }) => {
             <div className="grid grid-cols-5 gap-4 relative">
               {/* Continuous horizontal baseline across all nodes */}
               <div
-                className="absolute left-6 right-6 top-29 h-px bg-linear-to-r from-(--color-decor)/20 via-(--color-decor)/50 to-(--color-decor)/80 pointer-events-none z-0"
+                className="absolute left-6 right-6 top-29 h-px bg-linear-to-r from-(--color-decor)/10 via-(--color-decor)/40 to-(--color-decor)/90 pointer-events-none z-0"
                 aria-hidden="true"
               />
 
@@ -323,7 +323,7 @@ export const Experience: React.FC<ExperienceProps> = ({ currentLang }) => {
               </div>
             </div>
 
-            {/* Right Column: Chessboard Strategic Art with Subtle, Elegant Ripples */}
+            {/* Right Column: Chessboard Strategic Art with Irregular Orbital Curves & Celestial Drops */}
             <div className="lg:col-span-5 relative min-h-75 sm:min-h-95 lg:min-h-full flex items-center justify-center overflow-hidden bg-(--color-main)">
               
               {/* Chessboard Image */}
@@ -351,112 +351,118 @@ export const Experience: React.FC<ExperienceProps> = ({ currentLang }) => {
                 aria-hidden="true"
               />
 
-              {/* Ambient Warm Golden Backlight behind King piece */}
+              {/* Ambient Warm Golden Backlight behind focal center */}
               <div
-                className="absolute top-1/4 right-1/4 w-72 h-72 rounded-full bg-[radial-gradient(circle,rgba(197,160,89,0.14)_0%,rgba(197,160,89,0.03)_50%,transparent_75%)] blur-2xl pointer-events-none"
+                className="absolute w-72 h-72 sm:w-96 sm:h-96 rounded-full bg-[radial-gradient(circle,rgba(197,160,89,0.18)_0%,rgba(197,160,89,0.05)_45%,transparent_75%)] blur-3xl pointer-events-none"
                 aria-hidden="true"
               />
 
-              {/* Refined, Editorial Strategic Concentric Rings */}
+              {/* SVG Irregular Curve Lines, Sweeping Ellipses & Shining Decor Drops (Hero-aligned aesthetic) */}
               <svg
-                className="absolute inset-0 w-full h-full pointer-events-none overflow-visible"
-                viewBox="0 0 450 350"
-                preserveAspectRatio="xMidYMid slice"
+                className="absolute inset-0 w-full h-full pointer-events-none overflow-visible z-10"
+                viewBox="0 0 500 390"
+                preserveAspectRatio="xMidYMid meet"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <defs>
-                  {/* Radial glow for subtle center illumination */}
-                  <radialGradient id="kingCenterGlow" cx="50%" cy="50%" r="50%">
-                    <stop offset="0%" stopColor="#C5A059" stopOpacity="0.22" />
-                    <stop offset="55%" stopColor="#C5A059" stopOpacity="0.04" />
+                  {/* Primary gold gradient for sweeping orbital arc */}
+                  <linearGradient id="expOrbitGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stopColor="#C5A059" stopOpacity="0.08" />
+                    <stop offset="35%" stopColor="#E6CA85" stopOpacity="0.85" />
+                    <stop offset="65%" stopColor="#C5A059" stopOpacity="0.55" />
+                    <stop offset="100%" stopColor="#7D612E" stopOpacity="0.1" />
+                  </linearGradient>
+
+                  {/* Secondary gold gradient for intersecting eccentric arc */}
+                  <linearGradient id="expOrbitGrad2" x1="100%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" stopColor="#C5A059" stopOpacity="0.06" />
+                    <stop offset="30%" stopColor="#C5A059" stopOpacity="0.5" />
+                    <stop offset="75%" stopColor="#E6CA85" stopOpacity="0.85" />
+                    <stop offset="100%" stopColor="#C5A059" stopOpacity="0.1" />
+                  </linearGradient>
+
+                  {/* Radial glow for celestial starlight flare */}
+                  <radialGradient id="expDropGlow" cx="50%" cy="50%" r="50%">
+                    <stop offset="0%" stopColor="#FFFDF5" stopOpacity="1" />
+                    <stop offset="25%" stopColor="#E6CA85" stopOpacity="0.85" />
+                    <stop offset="60%" stopColor="#C5A059" stopOpacity="0.3" />
                     <stop offset="100%" stopColor="#C5A059" stopOpacity="0" />
                   </radialGradient>
 
-                  {/* Gradient mask to softly fade rings into darkness & board reflections */}
-                  <mask id="kingRipplesMask">
-                    <radialGradient id="kingMaskGrad" cx="64%" cy="42%" r="68%">
-                      <stop offset="0%" stopColor="#FFFFFF" stopOpacity="1" />
-                      <stop offset="45%" stopColor="#FFFFFF" stopOpacity="0.8" />
-                      <stop offset="75%" stopColor="#FFFFFF" stopOpacity="0.25" />
-                      <stop offset="100%" stopColor="#FFFFFF" stopOpacity="0" />
-                    </radialGradient>
-                    <rect width="100%" height="100%" fill="url(#kingMaskGrad)" />
-                  </mask>
-
-                 {/* <filter id="soft-blur">
-                    <feGaussianBlur stdDeviation="2" />
+                  {/* Refined bloom filter */}
+                  <filter id="expGoldBloom" x="-50%" y="-50%" width="200%" height="200%">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="3" result="blur1" />
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="1.2" result="blur2" />
+                    <feMerge>
+                      <feMergeNode in="blur1" />
+                      <feMergeNode in="blur2" />
+                      <feMergeNode in="SourceGraphic" />
+                    </feMerge>
                   </filter>
-
-                   <filter id="golden-glow" x="-50%" y="-50%" width="200%" height="200%">
-                    <feGaussianBlur stdDeviation="1.5" />
-                  </filter> */}
                 </defs>
 
-                {/* Soft center glow behind upper portion of king piece */}
-                <circle cx="288" cy="148" r="110" fill="url(#kingCenterGlow)" />
+                {/* 1. Outer Delicate Calibration / Astrolabe Dash Ring */}
+                <circle
+                  cx="250"
+                  cy="195"
+                  r="170"
+                  stroke="url(#expOrbitGrad1)"
+                  strokeWidth="0.5"
+                  strokeDasharray="3 8"
+                  opacity="0.45"
+                />
 
-                {/* Masked elegant concentric arcs */}
-                <g mask="url(#kingRipplesMask)">
-                  {/* Arc 1: Innermost whisper ring */}
-                  <circle
-                    cx="288"
-                    cy="148"
-                    r="52"
-                    stroke="#C5A059"
-                    strokeWidth="0.65"
-                    strokeOpacity="0.12"
-                  />
+                {/* 2. Primary Sweeping Orbital Curve (Irregular tilted ellipse) */}
+                <ellipse
+                  cx="250"
+                  cy="195"
+                  rx="195"
+                  ry="120"
+                  transform="rotate(-15 250 195)"
+                  stroke="url(#expOrbitGrad1)"
+                  strokeWidth="1.1"
+                  strokeDasharray="180 18 12 18 80 14 6 14"
+                  opacity="0.45"
+                />
 
-                  {/* Arc 2: Second ripple */}
-                  <circle
-                    cx="288"
-                    cy="148"
-                    r="78"
-                    stroke="#C5A059"
-                    strokeWidth="0.65"
-                    strokeOpacity="0.20"
-                    filter="url(#soft-blur)"
-                  />
+                {/* 3. Secondary Eccentric Intersecting Arc (tilted opposing direction) */}
+                <ellipse
+                  cx="248"
+                  cy="198"
+                  rx="130"
+                  ry="155"
+                  transform="rotate(22 248 198)"
+                  stroke="url(#expOrbitGrad2)"
+                  strokeWidth="0.75"
+                  strokeDasharray="125 25 30 25"
+                  opacity="0.55"
+                />
 
-                  {/* Arc 3: Mid strategic radius */}
-                  <circle
-                    cx="288"
-                    cy="148"
-                    r="132"
-                    stroke="#C5A059"
-                    strokeWidth="0.65"
-                    strokeOpacity="0.36"
-                    filter="url(#golden-glow)"
-                  />
+                {/* 4. Inner Halo Arc framing focal center */}
+                <circle
+                  cx="250"
+                  cy="188"
+                  r="88"
+                  stroke="#C5A059"
+                  strokeWidth="0.6"
+                  strokeDasharray="55 135"
+                  opacity="0.4"
+                />
 
-                  {/* Arc 4: Outer atmospheric wave */}
-                  <circle
-                    cx="288"
-                    cy="148"
-                    r="152"
-                    stroke="#C5A059"
-                    strokeWidth="0.5"
-                    strokeOpacity="0.21"
-                    filter="url(#soft-blur)"
-                  />
+                {/* 5. Delicate Astrolabe Crosshair / Ticks */}
+                <line x1="243" y1="25" x2="257" y2="25" stroke="#C5A059" strokeWidth="0.75" opacity="0.35" />
+                <line x1="250" y1="18" x2="250" y2="32" stroke="#C5A059" strokeWidth="0.75" opacity="0.35" />
+                <line x1="250" y1="358" x2="250" y2="372" stroke="#C5A059" strokeWidth="0.75" opacity="0.25" />
+                <line x1="73" y1="195" x2="87" y2="195" stroke="#C5A059" strokeWidth="0.75" opacity="0.25" />
+                <line x1="413" y1="195" x2="427" y2="195" stroke="#C5A059" strokeWidth="0.75" opacity="0.35" />
 
-                  {/* Arc 5: Far ambient halo */}
-                  <circle
-                    cx="288"
-                    cy="148"
-                    r="238"
-                    stroke="#C5A059"
-                    strokeWidth="0.5"
-                    strokeOpacity="0.06"
-                  />
-
-                  {/* Discrete tactical coordinate micro-ticks (architectural precision) */}
-                  <line x1="288" y1="56" x2="288" y2="64" stroke="#C5A059" strokeWidth="0.75" strokeOpacity="0.35" />
-                  <line x1="288" y1="232" x2="288" y2="240" stroke="#C5A059" strokeWidth="0.75" strokeOpacity="0.22" />
-                  <line x1="196" y1="148" x2="204" y2="148" stroke="#C5A059" strokeWidth="0.75" strokeOpacity="0.25" />
-                  <line x1="372" y1="148" x2="380" y2="148" stroke="#C5A059" strokeWidth="0.75" strokeOpacity="0.35" />
-                </g>
+                {/* 6. TINY CELESTIAL DEWDROPS along the curves */}
+                <circle cx="185" cy="85" r="1.5" fill="#E6CA85" opacity="0.85" />
+                <circle cx="185" cy="85" r="0.7" fill="#FFFFFF" />
+                <circle cx="330" cy="305" r="1.4" fill="#C5A059" opacity="0.7" />
+                <circle cx="330" cy="305" r="0.6" fill="#FFFFFF" />
+                <circle cx="130" cy="150" r="1.2" fill="#E6CA85" opacity="0.75" />
               </svg>
             </div>
 

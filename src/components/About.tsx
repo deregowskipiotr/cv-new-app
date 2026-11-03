@@ -99,7 +99,7 @@ export const About: React.FC<AboutProps> = ({ currentLang }) => {
           <div className="lg:col-span-7 relative pl-7 sm:pl-9 lg:pl-11 pt-2 lg:pt-0">
             {/* Continuous Vertical Champagne Gold Axis */}
             <div
-              className="absolute left-2.5 sm:left-1 top-4 bottom-1 w-px bg-linear-to-b from-(--color-decor)/90 via-(--color-decor)/40 to-(--color-decor)/10 pointer-events-none"
+              className="absolute -left-0.5 sm:left-1 top-4 bottom-1 w-px bg-linear-to-b from-(--color-decor)/90 via-(--color-decor)/40 to-(--color-decor)/10 pointer-events-none"
               aria-hidden="true"
             />
 
@@ -121,9 +121,9 @@ export const About: React.FC<AboutProps> = ({ currentLang }) => {
                     {/* Competency Header: Number + Icon + Title */}
                     <div className="flex items-center gap-3.5 sm:gap-4">
                       {/* Monospace 2-digit Sequence Number */}
-                      <span className="text-xs sm:text-sm font-semibold tracking-widest text-(--color-decor)/80 uppercase shrink-0">
+                     {/* <span className="text-xs sm:text-sm font-semibold tracking-widest text-(--color-decor)/80 uppercase shrink-0">
                         {comp.number}
-                      </span>
+                      </span> */}
 
                       {/* Icon */}
                       <span

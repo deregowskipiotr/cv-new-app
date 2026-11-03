@@ -328,7 +328,7 @@ export const Experience: React.FC<ExperienceProps> = ({ currentLang }) => {
               
               {/* Chessboard Image */}
               <img
-                src="/images/chess1.jpg"
+                src="/images/chess3.avif"
                 alt="Strategic decision-making"
                 className="w-full h-full object-cover object-center filter brightness-[0.78] contrast-[1.08]"
               />

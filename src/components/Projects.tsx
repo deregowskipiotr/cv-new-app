@@ -288,7 +288,7 @@ export const Projects: React.FC<ProjectsProps> = ({ currentLang }) => {
                       href={project.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 text-sm font-medium text-(--color-decor) hover:text-white transition-colors duration-300 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-(--color-decor)"
+                      className="inline-flex items-center gap-2 text-sm font-medium text-(--color-decor)/70 hover:text-(--color-decor) transition-colors duration-300 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-(--color-decor)"
                     >
                       <span>{t.openProject}</span>
                       <ArrowUpRight size={16} aria-hidden="true" />

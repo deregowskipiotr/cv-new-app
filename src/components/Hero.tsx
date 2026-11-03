@@ -124,20 +124,20 @@ export const Hero: React.FC<HeroProps> = ({ currentLang, onDownloadCv }) => {
                 stroke="url(#goldOrbitGrad1)"
                 strokeWidth="0.5"
                 strokeDasharray="3 8"
-                opacity="0.3"
+                opacity="0.6"
               />
 
               {/* 2. Primary Sweeping Orbital Curve (framing head and curving down right shoulder) */}
               <ellipse
                 cx="300"
                 cy="285"
-                rx="235"
-                ry="230"
+                rx="335"
+                ry="220"
                 transform="rotate(-18 300 285)"
                 stroke="url(#goldOrbitGrad1)"
                 strokeWidth="1.2"
                 strokeDasharray="260 20 15 20 110 15 8 15"
-                opacity="0.85"
+                opacity="0.35"
               />
 
               {/* 3. Secondary Eccentric Intersecting Arc (tilted opposing angle) */}

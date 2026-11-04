@@ -392,16 +392,16 @@ export const Contact: React.FC<ContactProps> = ({ currentLang }) => {
 
         {/* 4. BOTTOM "LET'S TALK" FOOTER BANNER (Screenshot Bottom Area) */}
         <div className="pt-10 border-t border-(--color-decor)/15">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center justify-between">
+          <div className="grid grid-cols-1 lg:grid-cols-[minmax(0,1fr)_auto_minmax(0,1fr)] gap-8 items-center">
             
             {/* Left: Expressive Headline & Social Icons */}
-            <div className="lg:col-span-6 space-y-5">
+            <div className="min-w-0 space-y-5 mb-4 md:mb-0">
               <h3 className="text-3xl sm:text-4xl lg:text-5xl font-normal font-['Antic_Didone'] text-(--color-text) tracking-normal">
                 {t.footer.tagline}
               </h3>
 
               {/* Social Channels */}
-              <div className="flex items-center gap-3">
+              <div className="flex items-center gap-3 md:gap-5 md:justify-self-start">
                 <a
                   href={t.footer.linkedInUrl}
                   target="_blank"
@@ -431,8 +431,8 @@ export const Contact: React.FC<ContactProps> = ({ currentLang }) => {
             </div>
 
             {/* ROTATING LUXURY MONOGRAM EMBLEM / STAMP (Top Right - as in template) */}
-            <div className="absolute hidden md:block md:ml-[32%] w-24 h-24 sm:w-28 sm:h-28 z-20 pointer-events-none select-none">
-              <svg className="w-full h-full animate-[spin_40s_linear_infinite]" viewBox="0 0 120 120">
+            <div aria-hidden="true" className="hidden lg:flex relative items-center justify-center w-28 h-28 pointer-events-none select-none">
+              <svg className="w-full h-full animate-[spin_40s_linear_infinite] motion-reduce:animate-none" viewBox="0 0 120 120">
                 <defs>
                   <path
                     id="monogramTextPath"
@@ -458,7 +458,7 @@ export const Contact: React.FC<ContactProps> = ({ currentLang }) => {
             </div>
 
             {/* Right: Contact Details Summary */}
-            <div className="lg:col-span-6 flex flex-col lg:items-end space-y-1.5 text-xs sm:text-sm font-light text-(--color-text)/70">
+            <div className="min-w-0 flex flex-col lg:items-end space-y-2.5 text-xs sm:text-sm font-light text-(--color-text)/70">
               <p className="flex items-center lg:justify-end gap-2">
                 <MapPin size={14} className="text-(--color-decor) shrink-0" aria-hidden="true" />
                 <span>{t.footer.location}</span>

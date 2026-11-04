@@ -256,6 +256,7 @@ export const contentPL = {
       title: "Junior Key Account Manager",
       company: "North Coast S.A.",
       description: "Bezpośrednia współpraca z kluczowymi klientami w kategoriach alkoholi, win i napojów bezalkoholowych. Rozwijanie nowych relacji handlowych i współtworzenie strategii rozwoju kategorii.",
+      responsibilitiesLabel: "Główne obowiązki",
       responsibilities: [
         { text: "Nawiązanie i rozwój współpracy z nowymi klientami — m.in. Carrefour w kategorii napojów bezalkoholowych" },
         { text: "Prowadzenie negocjacji handlowych oraz przygotowywanie i realizacja planów sprzedaży" },
@@ -270,7 +271,7 @@ export const contentPL = {
         id: "auchan",
         client: "Auchan",
         category: "Rozwój portfolio win",
-        description: "Dwukrotne zwiększenie liczby SKU w kategorii win w ciągu 2 lat dzięki optymalizacji oferty i partnerstwu z dostawcami.",
+        description: "Dwukrotne zwiększenie liczby SKU w kategorii win dzięki optymalizacji oferty i partnerstwu z dostawcami.",
         iconKey: "store",
       },
       {

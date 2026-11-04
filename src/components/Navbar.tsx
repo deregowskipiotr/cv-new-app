@@ -62,11 +62,21 @@ export const Navbar: React.FC<NavbarProps> = ({ currentLang, onToggleLang, onDow
 
     const handleScrollEnd = () => {
       isNavigatingRef.current = null;
+      if (navigationTimeoutRef.current) {
+        clearTimeout(navigationTimeoutRef.current);
+        navigationTimeoutRef.current = null;
+      }
+      handleScroll();
     };
 
     const handleUserInterrupt = () => {
       if (isNavigatingRef.current) {
         isNavigatingRef.current = null;
+        if (navigationTimeoutRef.current) {
+          clearTimeout(navigationTimeoutRef.current);
+          navigationTimeoutRef.current = null;
+        }
+        handleScroll();
       }
     };
 

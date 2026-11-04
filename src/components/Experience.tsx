@@ -307,7 +307,7 @@ export const Experience: React.FC<ExperienceProps> = ({ currentLang }) => {
                 </p>
 
                 {/* Core Responsibilities Checklist */}
-                <ul className="mt-8 space-y-3.5 max-w-xl" aria-label="Key Responsibilities">
+                <ul className="mt-8 space-y-3.5 max-w-xl" aria-label={t.featured.responsibilitiesLabel}>
                   {t.featured.responsibilities.map((resp, rIdx) => (
                     <li key={rIdx} className="flex items-start gap-3 text-xs sm:text-sm font-light text-(--color-text)/80 leading-relaxed">
                       <span
@@ -329,7 +329,7 @@ export const Experience: React.FC<ExperienceProps> = ({ currentLang }) => {
               {/* Chessboard Image */}
               <img
                 src="/images/chess3.avif"
-                alt="Strategic decision-making"
+                alt="Strategic decision-maker"
                 className="w-full h-full object-cover object-center filter brightness-[0.78] contrast-[1.08]"
               />
 

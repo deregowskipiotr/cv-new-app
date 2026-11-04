@@ -24,6 +24,7 @@ export interface FeaturedExperience {
   title: string;
   company: string;
   description: string;
+  responsibilitiesLabel: string;
   responsibilities: FeaturedResponsibility[];
 }
 

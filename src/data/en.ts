@@ -255,6 +255,7 @@ export const contentEN = {
       title: "Junior Key Account Manager",
       company: "North Coast S.A.",
       description: "Direct cooperation with active customers in spirits, wine and non-alcoholic beverages. Developing new customer relationships and supporting category growth across a diverse product portfolio.",
+      responsibilitiesLabel: "Key Responsibilities",
       responsibilities: [
         { text: "Developing new customer cooperation — including Carrefour in the non-alcoholic beverages category" },
         { text: "Conducting commercial negotiations and preparing sales plans" },

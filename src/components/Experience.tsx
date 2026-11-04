@@ -235,9 +235,9 @@ export const Experience: React.FC<ExperienceProps> = ({ currentLang }) => {
                     {/* Content */}
                     <div className="pl-3">
                       <div className="flex items-center gap-2.5 flex-wrap">
-                        <span className="text-[11px] font-mono tracking-widest text-(--color-decor)/70 uppercase">
+                        {/* <span className="text-[11px] font-mono tracking-widest text-(--color-decor)/70 uppercase">
                           {milestone.number}
-                        </span>
+                        </span> */}
                         <span className="text-xs font-medium text-(--color-decor)">
                           {milestone.period}
                         </span>

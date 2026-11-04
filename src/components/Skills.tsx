@@ -132,10 +132,10 @@ export const Skills: React.FC<SkillsProps> = ({ currentLang }) => {
                 {t.interests.map((item, idx) => (
                   <li
                     key={idx}
-                    className="text-sm font-light leading-relaxed text-(--color-text)/70"
+                    className="flex items-start gap-2.5 text-sm font-light leading-relaxed text-(--color-text)/70"
                   >
                     <span
-                      className="inline-block w-1 h-1 rounded-full bg-(--color-decor)/40 mr-2.5 align-middle"
+                      className="w-1 h-1 shrink-0 rounded-full bg-(--color-decor)/40 mt-[0.55rem]"
                       aria-hidden="true"
                     />
                     {item.text}

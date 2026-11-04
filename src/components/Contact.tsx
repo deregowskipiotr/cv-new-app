@@ -396,12 +396,12 @@ export const Contact: React.FC<ContactProps> = ({ currentLang }) => {
             
             {/* Left: Expressive Headline & Social Icons */}
             <div className="min-w-0 space-y-5 mb-4 md:mb-0">
-              <h3 className="text-3xl sm:text-4xl lg:text-5xl font-normal font-['Antic_Didone'] text-(--color-text) tracking-normal">
+              <h3 className="text-3xl text-center md:text-left sm:text-4xl lg:text-5xl font-normal text-(--color-text) tracking-normal">
                 {t.footer.tagline}
               </h3>
 
               {/* Social Channels */}
-              <div className="flex items-center gap-3 md:gap-5 md:justify-self-start">
+              <div className="flex items-center gap-8 md:gap-5 md:justify-self-start justify-self-center">
                 <a
                   href={t.footer.linkedInUrl}
                   target="_blank"

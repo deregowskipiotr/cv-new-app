@@ -396,12 +396,12 @@ export const Contact: React.FC<ContactProps> = ({ currentLang }) => {
             
             {/* Left: Expressive Headline & Social Icons */}
             <div className="min-w-0 space-y-5 mb-4 md:mb-0">
-              <h3 className="text-3xl text-center md:text-left sm:text-4xl lg:text-5xl font-normal text-(--color-text) tracking-normal">
+              <h3 className="text-3xl sm:text-4xl lg:text-5xl font-normal font-['Antic_Didone'] text-(--color-text) tracking-normal">
                 {t.footer.tagline}
               </h3>
 
               {/* Social Channels */}
-              <div className="flex items-center gap-8 md:gap-5 md:justify-self-start justify-self-center">
+              <div className="flex items-center gap-3 md:gap-5 md:justify-self-start">
                 <a
                   href={t.footer.linkedInUrl}
                   target="_blank"
@@ -430,8 +430,8 @@ export const Contact: React.FC<ContactProps> = ({ currentLang }) => {
               </div>
             </div>
 
-            {/* ROTATING LUXURY MONOGRAM EMBLEM / STAMP (Top Right - as in template) */}
-            <div aria-hidden="true" className="hidden lg:flex relative items-center justify-center w-28 h-28 pointer-events-none select-none">
+            {/* ROTATING LUXURY MONOGRAM EMBLEM / STAMP */}
+            <div aria-hidden="true" className="flex relative items-center justify-center mx-auto w-28 h-28 pointer-events-none select-none">
               <svg className="w-full h-full animate-[spin_40s_linear_infinite] motion-reduce:animate-none" viewBox="0 0 120 120">
                 <defs>
                   <path

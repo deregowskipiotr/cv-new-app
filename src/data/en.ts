@@ -3,6 +3,7 @@ import type { AboutContent } from '@/types/about';
 import type { ProjectsContent } from '@/types/projects';
 import type { SkillsContent } from '@/types/skills';
 import type { ExperienceContent } from '@/types/experience';
+import type { ContactContent } from '@/types/contact';
 
 export const contentEN = {
   nav: {
@@ -294,4 +295,78 @@ export const contentEN = {
       },
     ],
   } as ExperienceContent,
+  contact: {
+    eyebrow: "Contact",
+    headline: "Let's Start a Conversation",
+    subtitle: "I am always open to discussing new commercial partnerships, strategic key account management opportunities, or modern digital initiatives.",
+    cardsEyebrow: "Contact Me",
+    cardsHeading: "Get in",
+    cardsHeadingAccent: "Touch",
+    cards: [
+      {
+        id: "location",
+        iconKey: "location",
+        title: "Location",
+        primaryText: "Warsaw, Poland",
+        secondaryText: "Available for on-site & hybrid collaboration across Poland",
+        actionText: "Warsaw Metropolitan Area",
+        actionHref: "https://maps.google.com/?q=Warsaw,Poland",
+      },
+      {
+        id: "hours",
+        iconKey: "hours",
+        title: "Working Hours",
+        primaryText: "Mon – Fri: 08:00 – 18:00",
+        secondaryText: "Flexible schedule for scheduled business meetings",
+        actionText: "Open to new challenges",
+      },
+      {
+        id: "communication",
+        iconKey: "communication",
+        title: "Communication",
+        primaryText: "+48 500 000 000",
+        secondaryText: "piotr.deregowski@email.com",
+        actionText: "Send direct message",
+        actionHref: "mailto:piotr.deregowski@email.com",
+      },
+    ],
+    form: {
+      name: {
+        label: "Your Name",
+        placeholder: "What's your name?",
+      },
+      email: {
+        label: "Your Email",
+        placeholder: "Your email address",
+      },
+      subject: {
+        label: "Subject",
+        placeholder: "Commercial partnership, Key Accounts, etc.",
+      },
+      message: {
+        label: "Message",
+        placeholder: "Tell me about your business needs, project, or role...",
+      },
+      submitButton: "Send Message",
+      submittingButton: "Sending Message...",
+      successMessage: "Thank you for reaching out. Your message has been sent, and I will get back to you shortly.",
+      errorMessage: "Please fill out all required fields before sending.",
+    },
+    sidebar: {
+      eyebrow: "Have any query?",
+      title: "Contact Me",
+      paragraphs: [
+        "Whether you are looking to discuss key account commercial strategy, FMCG distribution partnerships, or explore digital and AI workflow integration — I welcome the conversation.",
+        "Feel free to reach out directly through this form or connect via LinkedIn. I value straightforward communication and thoughtful business dialogue.",
+      ],
+    },
+    footer: {
+      tagline: "Let's talk",
+      location: "Warsaw, Mazovia, Poland",
+      email: "piotr.deregowski@email.com",
+      phone: "+48 500 000 000",
+      linkedInUrl: "https://www.linkedin.com/in/piotr-der%C4%99gowski-61b86927a/",
+      copyright: "© 2026 Piotr Deręgowski. All rights reserved.",
+    },
+  } as ContactContent,
 };

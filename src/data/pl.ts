@@ -3,6 +3,7 @@ import type { AboutContent } from '@/types/about';
 import type { ProjectsContent } from '@/types/projects';
 import type { SkillsContent } from '@/types/skills';
 import type { ExperienceContent } from '@/types/experience';
+import type { ContactContent } from '@/types/contact';
 
 export const contentPL = {
   nav: {
@@ -295,4 +296,78 @@ export const contentPL = {
       },
     ],
   } as ExperienceContent,
+  contact: {
+    eyebrow: "Kontakt",
+    headline: "Porozmawiajmy o współpracy",
+    subtitle: "Jestem otwarty na rozmowy o partnerstwach handlowych, zarządzaniu kluczowymi klientami oraz nowoczesnych projektach cyfrowych.",
+    cardsEyebrow: "Kontakt",
+    cardsHeading: "Nawiążmy",
+    cardsHeadingAccent: "kontakt",
+    cards: [
+      {
+        id: "location",
+        iconKey: "location",
+        title: "Lokalizacja",
+        primaryText: "Warszawa, Polska",
+        secondaryText: "Gotowość do współpracy stacjonarnej i hybrydowej w całej Polsce",
+        actionText: "Aglomeracja warszawska",
+        actionHref: "https://maps.google.com/?q=Warszawa,Polska",
+      },
+      {
+        id: "hours",
+        iconKey: "hours",
+        title: "Dostępność",
+        primaryText: "Pon – Pt: 08:00 – 18:00",
+        secondaryText: "Elastyczność w przypadku zaplanowanych spotkań biznesowych",
+        actionText: "Otwarty na nowe wyzwania",
+      },
+      {
+        id: "communication",
+        iconKey: "communication",
+        title: "Kontakt bezpośredni",
+        primaryText: "+48 500 000 000",
+        secondaryText: "piotr.deregowski@email.com",
+        actionText: "Napisz wiadomość",
+        actionHref: "mailto:piotr.deregowski@email.com",
+      },
+    ],
+    form: {
+      name: {
+        label: "Twoje imię i nazwisko",
+        placeholder: "Jak się nazywasz?",
+      },
+      email: {
+        label: "Twój adres e-mail",
+        placeholder: "Twój adres e-mail",
+      },
+      subject: {
+        label: "Temat",
+        placeholder: "Współpraca handlowa, Key Account, rekrutacja...",
+      },
+      message: {
+        label: "Wiadomość",
+        placeholder: "Opisz krótko potrzeby biznesowe, projekt lub propozycję roli...",
+      },
+      submitButton: "Wyślij wiadomość",
+      submittingButton: "Wysyłanie wiadomości...",
+      successMessage: "Dziękuję za kontakt. Wiadomość została wysłana — odpowiem najszybciej jak to możliwe.",
+      errorMessage: "Proszę wypełnić wszystkie wymagane pola przed wysłaniem.",
+    },
+    sidebar: {
+      eyebrow: "Masz pytanie lub propozycję?",
+      title: "Skontaktuj się ze mną",
+      paragraphs: [
+        "Niezależnie od tego, czy chcesz porozmawiać o strategii zarządzania kluczowymi klientami, rozwoju dystrybucji w FMCG, czy integracji nowoczesnych narzędzi cyfrowych — chętnie nawiążę dialog.",
+        "Napisz bezpośrednio przez formularz lub skontaktuj się ze mną na LinkedIn. Cenię konkretne rozmowy i partnerskie podejście do biznesu.",
+      ],
+    },
+    footer: {
+      tagline: "Porozmawiajmy",
+      location: "Warszawa, Mazowsze, Polska",
+      email: "piotr.deregowski@email.com",
+      phone: "+48 500 000 000",
+      linkedInUrl: "https://www.linkedin.com/in/piotr-der%C4%99gowski-61b86927a/",
+      copyright: "© 2026 Piotr Deręgowski. Wszelkie prawa zastrzeżone.",
+    },
+  } as ContactContent,
 };

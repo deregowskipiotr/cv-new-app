@@ -222,7 +222,7 @@ export const Projects: React.FC<ProjectsProps> = ({ currentLang }) => {
           </h2>
 
           {/* Subtitle */}
-          <p className="mt-4 text-base sm:text-lg text-(--color-text)/75 leading-relaxed font-light">
+          <p className="mt-5 text-sm sm:text-base font-light leading-relaxed text-(--color-text)/75">
             {t.subtitle}
           </p>
         </div>

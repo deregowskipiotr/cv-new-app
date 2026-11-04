@@ -84,7 +84,7 @@ export const Experience: React.FC<ExperienceProps> = ({ currentLang }) => {
               </h2>
 
             {/* Introduction */}
-            <p className="mt-5 text-sm sm:text-base font-light leading-relaxed text-(--color-text)/75 max-w-2xl">
+            <p className="mt-5 text-sm sm:text-base font-light leading-relaxed text-(--color-text)/75">
               {t.intro}
             </p>
           </div>

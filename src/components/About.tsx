@@ -66,7 +66,7 @@ export const About: React.FC<AboutProps> = ({ currentLang }) => {
               </h2>
 
               {/* Narrative Paragraphs */}
-              <div className="mt-6 space-y-4 text-sm sm:text-base font-light leading-relaxed text-(--color-text)/75">
+              <div className="mt-5 space-y-4 text-sm sm:text-base font-light leading-relaxed text-(--color-text)/75">
                 {t.paragraphs.map((paragraph, index) => (
                   <p key={index}>{paragraph}</p>
                 ))}

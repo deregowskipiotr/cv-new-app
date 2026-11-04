@@ -41,7 +41,7 @@ export const Skills: React.FC<SkillsProps> = ({ currentLang }) => {
           >
             {t.headline}
           </h2>
-          <p className="mt-4 text-sm sm:text-base font-light leading-relaxed text-(--color-text)/65">
+          <p className="mt-5 text-sm sm:text-base font-light leading-relaxed text-(--color-text)/75">
             {t.intro}
           </p>
         </div>

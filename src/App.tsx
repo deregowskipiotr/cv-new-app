@@ -5,6 +5,7 @@ import { About } from './components/About';
 import { Experience } from './components/Experience';
 import { Skills } from './components/Skills';
 import { Projects } from './components/Projects';
+import { Contact } from './components/Contact';
 
 export const App: React.FC = () => {
   const [currentLang, setCurrentLang] = useState<'PL' | 'EN'>('EN');
@@ -51,6 +52,9 @@ export const App: React.FC = () => {
 
         {/* Projects Section */}
         <Projects currentLang={currentLang} />
+
+        {/* Contact Section */}
+        <Contact currentLang={currentLang} />
       </main>
     </div>
   );

@@ -130,7 +130,7 @@ export const Navbar: React.FC<NavbarProps> = ({ currentLang, onToggleLang, onDow
   return (
     <>
       <header
-        className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 bg-(--color-main)/80 backdrop-blur-md border-b ${
+        className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 bg-(--color-main)/80 backdrop-blur-sm border-b ${
           scrolled ? 'border-(--color-decor)/10 shadow-lg' : 'border-transparent'
         }`}
       >
@@ -246,7 +246,7 @@ export const Navbar: React.FC<NavbarProps> = ({ currentLang, onToggleLang, onDow
                   handleNavClick(e, link.href, link.id);
                 }}
                 className={`text-2xl transition-colors duration-500 tracking-normal ${
-                  isActive ? 'text-(--color-decor)' : 'text-(--color-text) hover:text-(--color-decor)'
+                  isActive ? 'text-(--color-decor)' : 'text-(--color-text)/60 hover:text-(--color-decor)'
                 }`}
               >
                 {label}

@@ -430,6 +430,33 @@ export const Contact: React.FC<ContactProps> = ({ currentLang }) => {
               </div>
             </div>
 
+            {/* ROTATING LUXURY MONOGRAM EMBLEM / STAMP (Top Right - as in template) */}
+            <div className="absolute hidden md:block md:ml-[32%] w-24 h-24 sm:w-28 sm:h-28 z-20 pointer-events-none select-none">
+              <svg className="w-full h-full animate-[spin_40s_linear_infinite]" viewBox="0 0 120 120">
+                <defs>
+                  <path
+                    id="monogramTextPath"
+                    d="M 60, 60 m -44, 0 a 44,44 0 1,1 88,0 a 44,44 0 1,1 -88,0"
+                    fill="none"
+                  />
+                </defs>
+                {/* Outer delicate rim */}
+                <circle cx="60" cy="60" r="52" fill="none" stroke="var(--color-decor)" strokeWidth="0.5" opacity="0.25" strokeDasharray="3 3" />
+                {/* Curved circular lettering */}
+                <text className="text-[7.5px] uppercase font-['Raleway'] tracking-[0.26em] fill-(--color-decor) opacity-70">
+                  <textPath href="#monogramTextPath" startOffset="0%">
+                    • COMMERCIAL LEADERSHIP • SALES FOCUS • DIGITAL CV •
+                  </textPath>
+                </text>
+              </svg>
+              {/* Center Monogram Initial */}
+              <div className="absolute inset-0 flex items-center justify-center">
+                <span className="text-xs font-light italic text-(--color-decor)/80">
+                  PD
+                </span>
+              </div>
+            </div>
+
             {/* Right: Contact Details Summary */}
             <div className="lg:col-span-6 flex flex-col lg:items-end space-y-1.5 text-xs sm:text-sm font-light text-(--color-text)/70">
               <p className="flex items-center lg:justify-end gap-2">

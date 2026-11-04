@@ -458,10 +458,10 @@ export const Experience: React.FC<ExperienceProps> = ({ currentLang }) => {
                 <line x1="413" y1="195" x2="427" y2="195" stroke="#C5A059" strokeWidth="0.75" opacity="0.35" />
 
                 {/* 6. TINY CELESTIAL DEWDROPS along the curves */}
-                <circle cx="185" cy="85" r="1.5" fill="#E6CA85" opacity="0.85" />
-                <circle cx="185" cy="85" r="0.7" fill="#FFFFFF" />
+                <circle cx="185" cy="90" r="0.8" fill="#E6CA85" opacity="0.55" />
+                <circle cx="185" cy="85" r="0.7" fill="#E6CA85" opacity="0.1" />
                 <circle cx="330" cy="305" r="1.4" fill="#C5A059" opacity="0.7" />
-                <circle cx="330" cy="305" r="0.6" fill="#FFFFFF" />
+                <circle cx="330" cy="305" r="0.6" fill="#E6CA85" opacity="0.1" />
                 <circle cx="130" cy="150" r="1.2" fill="#E6CA85" opacity="0.75" />
               </svg>
             </div>

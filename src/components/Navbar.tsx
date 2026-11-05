@@ -22,6 +22,12 @@ export const Navbar: React.FC<NavbarProps> = ({ currentLang, onToggleLang, onDow
 
   const t = currentLang === 'EN' ? contentEN.nav : contentPL.nav;
 
+  const onContactClick = () => {
+      document.getElementById('contact')?.scrollIntoView({
+      behavior: 'smooth',
+    });
+  };
+
   // Handle sticky navbar border/shadow and robust active section highlighting on scroll
   useEffect(() => {
     const handleScroll = () => {
@@ -79,6 +85,8 @@ export const Navbar: React.FC<NavbarProps> = ({ currentLang, onToggleLang, onDow
         handleScroll();
       }
     };
+
+    
 
     window.addEventListener('scroll', handleScroll, { passive: true });
     window.addEventListener('scrollend', handleScrollEnd, { passive: true });
@@ -187,7 +195,7 @@ export const Navbar: React.FC<NavbarProps> = ({ currentLang, onToggleLang, onDow
             <MetallicButton onClick={onToggleLang} size='sm'>
               {currentLang}
             </MetallicButton>
-            <MetallicButton onClick={onDownloadCv} size='sm'>
+            <MetallicButton onClick={onContactClick} size="sm">
               {t.letsTalk}
             </MetallicButton>
           </div>

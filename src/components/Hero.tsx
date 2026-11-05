@@ -246,7 +246,7 @@ export const Hero: React.FC<HeroProps> = ({ currentLang, onDownloadCv }) => {
               <img
                 src="/images/cv-image.png" 
                 alt="Piotr Deręgowski"
-                className="w-full h-full object-contain sm:object-cover object-top filter brightness-[0.98] contrast-[1.04] transition-all duration-700"
+                className="w-full h-full object-contain sm:object-cover object-top filter brightness-[0.65] contrast-[1.08] transition-all duration-700"
                 style={{
                   WebkitMaskImage: 'radial-gradient(ellipse 75% 72% at 50% 32%, black 38%, rgba(0, 0, 0, 0.75) 55%, transparent 84%), linear-gradient(to bottom, black 40%, transparent 84%)',
                   maskImage: 'radial-gradient(ellipse 75% 72% at 50% 32%, black 38%, rgba(0, 0, 0, 0.75) 55%, transparent 84%), linear-gradient(to bottom, black 40%, transparent 84%)',

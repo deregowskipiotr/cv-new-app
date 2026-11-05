@@ -75,8 +75,8 @@ export const About: React.FC<AboutProps> = ({ currentLang }) => {
 
             {/* Compact Editorial Data Strip (Typographic facts separated by thin 1px rules, not cards) */}
             {t.stats && t.stats.length > 0 && (
-              <div className="mt-10 pt-8 border-t border-(--color-decor)/15">
-                <div className="grid grid-cols-3 divide-x divide-(--color-decor)/15 rounded-md border border-(--color-decor)/15 bg-(--color-main)/40 backdrop-blur-xs py-4 px-2 sm:px-4">
+              <div className="mt-10 pt-8 border-t border-(--color-decor)/35">
+                <div className="grid grid-cols-3 divide-x divide-(--color-decor)/35 rounded-md border border-(--color-decor)/35 bg-(--color-main)/40 backdrop-blur-xs py-4 px-2 sm:px-4">
                   {t.stats.map((stat, index) => (
                     <div
                       key={index}
@@ -85,7 +85,7 @@ export const About: React.FC<AboutProps> = ({ currentLang }) => {
                       <div className="text-2xl sm:text-3xl font-light text-(--color-decor) tracking-tight">
                         {stat.value}
                       </div>
-                      <div className="text-[11px] sm:text-xs text-(--color-text)/65 font-['Raleway'] mt-1 tracking-normal font-light leading-snug">
+                      <div className="text-[11px] sm:text-xs text-(--color-text)/65 mt-1 tracking-normal font-light leading-snug">
                         {stat.label}
                       </div>
                     </div>

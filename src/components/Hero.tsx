@@ -284,8 +284,8 @@ export const Hero: React.FC<HeroProps> = ({ currentLang, onDownloadCv }) => {
                 key={index}
                 className={`p-4 sm:p-5 rounded-md border transition-all duration-700 bg-(--color-main)/60 backdrop-blur-md ${
                   isActive
-                    ? 'border-(--color-decor)/40 shadow-lg shadow-(--color-decor)/5'
-                    : 'border-(--color-decor)/30 opacity-70 hover:opacity-100 hover:border-(--color-decor)/30'
+                    ? 'border-(--color-decor)/50 shadow-lg shadow-(--color-decor)/5'
+                    : 'border-(--color-decor)/35 opacity-70 hover:opacity-100 hover:border-(--color-decor)/30'
                 }`}
               >
                 <div className="text-2xl sm:text-3xl font-bold text-(--color-decor) tracking-normal">

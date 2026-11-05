@@ -21,7 +21,7 @@ export const Projects: React.FC<ProjectsProps> = ({ currentLang }) => {
       case 'spreadsheet':
         return (
           <div
-            className="relative w-full h-24 sm:h-28 overflow-hidden rounded-t-md border-b border-(--color-decor)/10 bg-linear-to-b from-(--color-decor)/3 to-transparent flex items-center justify-between px-5"
+            className="relative w-full h-24 sm:h-28 overflow-hidden rounded-t-md border-b border-(--color-decor)/25 bg-linear-to-b from-(--color-decor)/3 to-transparent flex items-center justify-between px-5"
             aria-hidden="true"
           >
             {/* Fine spreadsheet cell grid */}
@@ -82,7 +82,7 @@ export const Projects: React.FC<ProjectsProps> = ({ currentLang }) => {
       case 'vocabulary':
         return (
           <div
-            className="relative w-full h-24 sm:h-28 overflow-hidden rounded-t-md border-b border-(--color-decor)/10 bg-linear-to-b from-(--color-decor)/3 to-transparent flex items-center justify-between px-5"
+            className="relative w-full h-24 sm:h-28 overflow-hidden rounded-t-md border-b border-(--color-decor)/25 bg-linear-to-b from-(--color-decor)/3 to-transparent flex items-center justify-between px-5"
             aria-hidden="true"
           >
             {/* Typographic dictionary-inspired texture */}
@@ -139,7 +139,7 @@ export const Projects: React.FC<ProjectsProps> = ({ currentLang }) => {
       case 'topographic':
         return (
           <div
-            className="relative w-full h-24 sm:h-28 overflow-hidden rounded-t-md border-b border-(--color-decor)/10 bg-linear-to-b from-(--color-decor)/3 to-transparent flex items-center justify-between px-5"
+            className="relative w-full h-24 sm:h-28 overflow-hidden rounded-t-md border-b border-(--color-decor)/25 bg-linear-to-b from-(--color-decor)/3 to-transparent flex items-center justify-between px-5"
             aria-hidden="true"
           >
             {/* Abstract topographic contour curves */}
@@ -235,7 +235,7 @@ export const Projects: React.FC<ProjectsProps> = ({ currentLang }) => {
             return (
               <div
                 key={project.id}
-                className={`group relative flex flex-col justify-between rounded-md border border-(--color-decor)/15 bg-(--color-main)/60 backdrop-blur-md transition-colors duration-500 hover:border-(--color-decor)/35 hover:bg-(--color-decor)/2 ${
+                className={`group relative flex flex-col justify-between rounded-md border border-(--color-decor)/35 bg-(--color-main)/60 backdrop-blur-md transition-colors duration-500 hover:border-(--color-decor)/50 hover:bg-(--color-decor)/2 ${
                   isLastOdd
                     ? 'md:col-span-2 lg:col-span-1 md:max-w-md md:mx-auto lg:max-w-none w-full'
                     : ''
@@ -282,7 +282,7 @@ export const Projects: React.FC<ProjectsProps> = ({ currentLang }) => {
                 </div>
 
                 {/* BOTTOM HALF: Separator & Action CTA */}
-                <div className="px-6 sm:px-7 pb-6 sm:pb-7 pt-4 border-t border-(--color-decor)/10">
+                <div className="px-6 sm:px-7 pb-6 sm:pb-7 pt-4 border-t border-(--color-decor)/25">
                   {project.url ? (
                     <a
                       href={project.url}
@@ -304,7 +304,6 @@ export const Projects: React.FC<ProjectsProps> = ({ currentLang }) => {
             );
           })}
         </div>
-
       </div>
     </section>
   );

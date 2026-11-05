@@ -136,7 +136,7 @@ export const Contact: React.FC<ContactProps> = ({ currentLang }) => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-6 items-stretch">
           
           {/* Left Block: Call to Action title */}
-          <div className="lg:col-span-3 space-y-6 flex flex-col justify-center p-6 rounded-md border border-(--color-decor)/15 bg-(--color-main)/40 backdrop-blur-md">
+          <div className="lg:col-span-3 space-y-6 flex flex-col justify-center p-6 rounded-md border border-(--color-decor)/35 bg-(--color-main)/40 backdrop-blur-md">
             <span className="text-xs font-mono tracking-wide text-(--color-decor)/80 uppercase mb-2">
               {t.cardsEyebrow}
             </span>
@@ -161,7 +161,7 @@ export const Contact: React.FC<ContactProps> = ({ currentLang }) => {
               return (
                 <div
                   key={card.id}
-                  className="group rounded-md border border-(--color-decor)/15 bg-(--color-main)/60 backdrop-blur-md p-6 flex flex-col justify-between transition-colors duration-500 hover:border-(--color-decor)/40 hover:bg-(--color-decor)/2"
+                  className="group rounded-md border border-(--color-decor)/35 bg-(--color-main)/60 backdrop-blur-md p-6 flex flex-col justify-between transition-colors duration-500 hover:border-(--color-decor)/50 hover:bg-(--color-decor)/2"
                 >
                   <div>
                     {/* Icon container */}
@@ -215,7 +215,7 @@ export const Contact: React.FC<ContactProps> = ({ currentLang }) => {
         </div>
 
         {/* 3. FEATURED CONTACT FORM CONTAINER (Screenshot Centerpiece) */}
-        <div className="relative rounded-md border border-(--color-decor)/20 bg-(--color-main)/85 backdrop-blur-md overflow-hidden shadow-[0_8px_32px_rgba(0,0,0,0.5)] p-6 sm:p-8 lg:p-12">
+        <div className="relative rounded-md border border-(--color-decor)/35 bg-(--color-main)/85 backdrop-blur-md overflow-hidden shadow-[0_8px_32px_rgba(0,0,0,0.5)] p-6 sm:p-8 lg:p-12">
           
           {/* Subtle interior ambient glow */}
           <div
@@ -269,7 +269,7 @@ export const Contact: React.FC<ContactProps> = ({ currentLang }) => {
                       onChange={handleChange}
                       placeholder={t.form.name.placeholder}
                       required
-                      className="w-full rounded-md border border-(--color-decor)/15 bg-(--color-main)/90 px-4 py-3 text-sm text-(--color-text) placeholder:text-(--color-text)/35 focus:border-(--color-decor)/60 focus:bg-(--color-main) focus:outline-none transition-colors duration-500"
+                      className="w-full rounded-md border border-(--color-decor)/35 bg-(--color-main)/90 px-4 py-3 text-sm text-(--color-text) placeholder:text-(--color-text)/35 focus:border-(--color-decor)/60 focus:bg-(--color-main) focus:outline-none transition-colors duration-500"
                     />
                   </div>
 
@@ -290,7 +290,7 @@ export const Contact: React.FC<ContactProps> = ({ currentLang }) => {
                         onChange={handleChange}
                         placeholder={t.form.email.placeholder}
                         required
-                        className="w-full rounded-md border border-(--color-decor)/15 bg-(--color-main)/90 px-4 py-3 text-sm text-(--color-text) placeholder:text-(--color-text)/35 focus:border-(--color-decor)/60 focus:bg-(--color-main) focus:outline-none transition-colors duration-500"
+                        className="w-full rounded-md border border-(--color-decor)/35 bg-(--color-main)/90 px-4 py-3 text-sm text-(--color-text) placeholder:text-(--color-text)/35 focus:border-(--color-decor)/60 focus:bg-(--color-main) focus:outline-none transition-colors duration-500"
                       />
                     </div>
 
@@ -308,7 +308,7 @@ export const Contact: React.FC<ContactProps> = ({ currentLang }) => {
                         value={formData.subject}
                         onChange={handleChange}
                         placeholder={t.form.subject.placeholder}
-                        className="w-full rounded-md border border-(--color-decor)/15 bg-(--color-main)/90 px-4 py-3 text-sm text-(--color-text) placeholder:text-(--color-text)/35 focus:border-(--color-decor)/60 focus:bg-(--color-main) focus:outline-none transition-colors duration-500"
+                        className="w-full rounded-md border border-(--color-decor)/35 bg-(--color-main)/90 px-4 py-3 text-sm text-(--color-text) placeholder:text-(--color-text)/35 focus:border-(--color-decor)/60 focus:bg-(--color-main) focus:outline-none transition-colors duration-500"
                       />
                     </div>
                   </div>
@@ -329,7 +329,7 @@ export const Contact: React.FC<ContactProps> = ({ currentLang }) => {
                       onChange={handleChange}
                       placeholder={t.form.message.placeholder}
                       required
-                      className="w-full rounded-md border border-(--color-decor)/15 bg-(--color-main)/90 px-4 py-3 text-sm text-(--color-text) placeholder:text-(--color-text)/35 focus:border-(--color-decor)/60 focus:bg-(--color-main) focus:outline-none transition-colors duration-500 resize-none"
+                      className="w-full rounded-md border border-(--color-decor)/35 bg-(--color-main)/90 px-4 py-3 text-sm text-(--color-text) placeholder:text-(--color-text)/35 focus:border-(--color-decor)/60 focus:bg-(--color-main) focus:outline-none transition-colors duration-500 resize-none"
                     />
                   </div>
 
@@ -381,7 +381,7 @@ export const Contact: React.FC<ContactProps> = ({ currentLang }) => {
               </div>
 
               {/* Decorative detail */}
-              <div className="mt-8 pt-6 border-t border-(--color-decor)/15 flex items-center justify-between text-xs font-light text-(--color-text)/55">
+              <div className="mt-8 pt-6 border-t border-(--color-decor)/35 flex items-center justify-between text-xs font-light text-(--color-text)/55">
                 <span>{currentLang === 'EN' ? 'Typical response time: within 24 hours' : 'Średni czas odpowiedzi: do 24 godzin'}</span>
                 <span className="text-(--color-decor)/70 font-mono">PD</span>
               </div>

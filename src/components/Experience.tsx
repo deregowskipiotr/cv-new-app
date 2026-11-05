@@ -270,11 +270,11 @@ export const Experience: React.FC<ExperienceProps> = ({ currentLang }) => {
         </div>
 
         {/* 3. FEATURED EXPERIENCE: Latest Position & Strategic Chessboard Visual */}
-        <div className="relative rounded-md border border-(--color-decor)/20 bg-(--color-main)/80 backdrop-blur-md overflow-hidden shadow-[0_8px_32px_rgba(0,0,0,0.5)]">
+        <div className="relative rounded-md border border-(--color-decor)/35 bg-(--color-main)/80 backdrop-blur-md overflow-hidden shadow-[0_8px_32px_rgba(0,0,0,0.5)]">
           
           {/* Subtle interior gold glow */}
           <div
-            className="absolute top-0 right-1/4 w-96 h-96 rounded-full bg-[radial-gradient(circle,rgba(197,160,89,0.06)_0%,transparent_70%)] blur-3xl pointer-events-none -z-10"
+            className="absolute top-0 right-1/6 w-96 h-96 rounded-full bg-[radial-gradient(circle,rgba(197,160,89,0.06)_0%,transparent_70%)] blur-3xl pointer-events-none -z-10"
             aria-hidden="true"
           />
 
@@ -487,7 +487,7 @@ export const Experience: React.FC<ExperienceProps> = ({ currentLang }) => {
               return (
                 <div
                   key={item.id}
-                  className="group rounded-md border border-(--color-decor)/15 bg-(--color-main)/60 backdrop-blur-md p-6 flex flex-col justify-between transition-all duration-500 hover:border-(--color-decor)/35 hover:bg-(--color-decor)/2"
+                  className="group rounded-md border border-(--color-decor)/35 bg-(--color-main)/60 backdrop-blur-md p-6 flex flex-col justify-between transition-all duration-500 hover:border-(--color-decor)/50 hover:bg-(--color-decor)/2"
                 >
                   <div>
                     {/* Icon + Title Header */}

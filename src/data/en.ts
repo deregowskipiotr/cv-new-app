@@ -357,8 +357,8 @@ export const contentEN = {
       eyebrow: "Have any query?",
       title: "Contact Me",
       paragraphs: [
-        "Whether you are looking to discuss key account commercial strategy, FMCG distribution partnerships, or explore digital and AI workflow integration — I welcome the conversation.",
-        "Feel free to reach out directly through this form or connect via LinkedIn. I value straightforward communication and thoughtful business dialogue.",
+        "I would be happy to discuss opportunities where I can put my FMCG sales experience, distribution development skills and ability to build long-term B2B relationships to good use. I am particularly interested in roles focused on customer development, commercial negotiations and achieving business objectives.",
+        "If you are looking for someone with hands-on sales experience, a partnership-driven approach and a strong focus on results, feel free to contact me via the form or LinkedIn.",
       ],
     },
     footer: {

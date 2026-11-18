@@ -358,8 +358,8 @@ export const contentPL = {
       eyebrow: "Masz pytanie lub propozycję?",
       title: "Skontaktuj się ze mną",
       paragraphs: [
-        "Niezależnie od tego, czy chcesz porozmawiać o strategii zarządzania kluczowymi klientami, rozwoju dystrybucji w FMCG, czy integracji nowoczesnych narzędzi cyfrowych — chętnie nawiążę dialog.",
-        "Napisz bezpośrednio przez formularz lub skontaktuj się ze mną na LinkedIn. Cenię konkretne rozmowy i partnerskie podejście do biznesu.",
+        "Chętnie porozmawiam o możliwościach wykorzystania mojego doświadczenia w sprzedaży FMCG, rozwoju dystrybucji oraz budowaniu długofalowych relacji z klientami B2B. Szczególnie interesują mnie role związane z rozwojem klientów, negocjacjami handlowymi i realizacją celów biznesowych.",
+        "Jeśli szukają Państwo osoby z praktycznym doświadczeniem w sprzedaży, partnerskim podejściem do współpracy i nastawieniem na konkretne rezultaty, zapraszam do kontaktu przez formularz lub LinkedIn.",
       ],
     },
     footer: {

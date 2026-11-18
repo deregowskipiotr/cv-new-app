@@ -51,14 +51,16 @@ export const Hero: React.FC<HeroProps> = ({ currentLang, onDownloadCv }) => {
 
           {/* Action CTAs */}
           <div className="pt-1 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
-            <div onClick={onDownloadCv} className="inline-block">
-              <MetallicButton className="w-full sm:w-56">
-                <span className="flex items-center justify-center space-x-3">
-                  <Download size={18} className="text-(--color-decor)" />
-                  <span className="font-medium">{t.downloadCv}</span>
-                </span>
-              </MetallicButton>
-            </div>
+            <MetallicButton
+              onClick={onDownloadCv}
+              className="w-full sm:w-56"
+              aria-label={t.downloadCv}
+            >
+              <span className="flex items-center justify-center space-x-3">
+                <Download size={18} className="text-(--color-decor)" />
+                <span className="font-medium">{t.downloadCv}</span>
+              </span>
+            </MetallicButton>
           </div>
         </div>
 

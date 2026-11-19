@@ -489,7 +489,7 @@ export const Contact: React.FC<ContactProps> = ({ currentLang }) => {
           <div className="mt-12 pt-6 border-t border-(--color-decor)/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] font-light text-(--color-text)/45">
             <p>{t.footer.copyright}</p>
             <p className="font-mono text-(--color-decor)/40">
-              PIOTR DERĘGOWSKI &middot; DIGITAL PORTFOLIO
+              PIOTR DERĘGOWSKI &middot; DIGITAL CV &middot; 2026
             </p>
           </div>
         </div>

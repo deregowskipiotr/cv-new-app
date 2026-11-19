@@ -9,7 +9,11 @@ import { Contact } from './components/Contact';
 import { PrintableCV } from './components/PrintableCV';
 
 export const App: React.FC = () => {
-  const [currentLang, setCurrentLang] = useState<'PL' | 'EN'>('EN');
+  const [currentLang, setCurrentLang] = useState<'PL' | 'EN'>(() => {
+    const params = new URLSearchParams(window.location.search);
+    const lang = params.get('lang')?.toUpperCase();
+    return lang === 'PL' ? 'PL' : 'EN';
+  });
   const [currentPath, setCurrentPath] = useState<string>(() => window.location.pathname);
 
   useEffect(() => {
@@ -39,7 +43,13 @@ export const App: React.FC = () => {
 
   // Dedicated independent printable CV view
   if (currentPath === '/printable-cv') {
-    return <PrintableCV onBack={() => navigateTo('/')} />;
+    return (
+      <PrintableCV
+        currentLang={currentLang}
+        onToggleLang={handleToggleLang}
+        onBack={() => navigateTo('/')}
+      />
+    );
   }
 
   return (

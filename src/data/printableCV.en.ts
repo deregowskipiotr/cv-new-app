@@ -1,9 +1,9 @@
 import type { PrintableCVData } from '../types/printableCV';
 
-export const printableCVData: PrintableCVData = {
+export const printableCVDataEN: PrintableCVData = {
   personal: {
     fullName: "Piotr Deręgowski",
-    title: "Key Account Manager | Sales Leader",
+    title: "FMCG | Key Accounts | Commercial Leadership",
     location: "Warsaw, Poland",
     phonePlaceholder: "+48 500 000 000",
     emailPlaceholder: "piotr.deregowski@email.com",
@@ -13,18 +13,21 @@ export const printableCVData: PrintableCVData = {
   summary: {
     title: "Professional Summary",
     paragraphs: [
-      "Commercial leader with over 18 years of sales, distribution, and business development experience across the FMCG, B2B, HoReCa, and modern retail sectors. Proven track record progressing from frontline sales execution to managing a 12-person regional sales team and negotiating annual terms with major national retail accounts (including Auchan, Carrefour, and Selgros).",
-      "Combines high-stakes commercial negotiation and long-term partnership building with rigorous sales margin analysis, marketing budget governance, and reliable revenue target delivery. Complemented by active proficiency in practical AI tools and modern digital workflows to streamline business operations.",
+      "I bring over 18 years of sales and business development experience in the FMCG sector. My professional career spans every operational tier — from frontline sales representation and managing a 12-person regional sales team to high-stakes key account partnerships.",
+      "I have operated across diverse commercial channels: Traditional Trade, HoReCa, B2B, and modern retail networks, cultivating long-term partnerships with retail clients and wholesale distributors alike.",
+      "I combine advanced commercial negotiations and relationship building with rigorous sales analysis, marketing budget governance, and ambitious revenue target delivery.",
+      "I emphasize autonomy, collaborative partnership, and continuous learning. I augment proven commercial expertise with practical knowledge of AI and modern digital solutions to optimize real-world business workflows."
     ],
   },
   experience: {
     title: "Professional Experience",
+    subtitle: "Chronological Order · Years Only",
     items: [
       {
         id: "exp-05",
         role: "Junior Key Account Manager",
         company: "North Coast S.A.",
-        period: "2023–2025",
+        period: "2023–2024",
         location: "Warsaw, Poland",
         scope: "Modern retail networks: Auchan, Duka, Carrefour, Selgros | Spirits, Wine, Non-Alcoholic",
         highlights: [
@@ -89,43 +92,46 @@ export const printableCVData: PrintableCVData = {
     ],
   },
   education: {
-    title: "Education & Professional Training",
+    title: "Education",
     items: [
       {
         id: "edu-01",
-        degreeOrCertificate: "Higher Education — Business Administration / Economics",
-        institution: "University Degree (Formal Education — placeholder)",
-        period: "Completed",
-        details: "Focus on commercial management, business economics, and organizational management.",
+        institution: "Random School",
       },
+    ],
+  },
+  training: {
+    title: "Professional Training",
+    items: [
       {
-        id: "edu-02",
-        degreeOrCertificate: "Umiejętności Jutra AI",
-        institution: "Google & SGH (Warsaw School of Economics)",
+        id: "tr-01",
+        title: "Umiejętności Jutra AI",
+        provider: "Google & SGH (Warsaw School of Economics)",
         details: "Practical applications of artificial intelligence, prompt engineering, and automated business workflows.",
       },
       {
-        id: "edu-03",
-        degreeOrCertificate: "Front-end Developer Bootcamp",
-        institution: "Kodilla",
+        id: "tr-02",
+        title: "Front-end Developer Bootcamp",
+        provider: "Kodilla",
         details: "Modern web technologies: HTML, CSS, JavaScript, ES6, React, Git, and software development fundamentals.",
       },
       {
-        id: "edu-04",
-        degreeOrCertificate: "Microsoft Excel — Intermediate & Advanced",
-        institution: "Expose",
+        id: "tr-03",
+        title: "Microsoft Excel — Intermediate & Advanced",
+        provider: "Expose",
         details: "Advanced commercial calculation, data analysis, lookup functions, pivot tables, and sales reporting models.",
       },
       {
-        id: "edu-05",
-        degreeOrCertificate: "Sales Team Management Training",
-        institution: "Eurocash Internal Leadership Program",
+        id: "tr-04",
+        title: "Sales Team Management Training",
+        provider: "Eurocash Internal Leadership Program",
         details: "Sales team leadership, recruitment of sales representatives, target setting, coaching, and performance management.",
       },
     ],
   },
   skills: {
     title: "Professional Skills",
+    subtitle: "Core Functional & Strategic Competencies",
     categories: [
       {
         title: "Commercial & Key Account Management",
@@ -181,7 +187,7 @@ export const printableCVData: PrintableCVData = {
     title: "Languages",
     items: [
       { language: "Polish", level: "Native proficiency" },
-      { language: "English", level: "B1/B2 (Professional working proficiency — ongoing continuous learning)" },
+      { language: "English", level: "B1/B2 (Ongoing learning)" },
     ],
   },
   achievements: {
@@ -215,4 +221,15 @@ export const printableCVData: PrintableCVData = {
     ],
   },
   gdprClause: "I hereby consent to my personal data being processed for the purposes of the recruitment process in accordance with Regulation (EU) 2016/679 of the European Parliament and of the Council (GDPR).",
+  ui: {
+    backToPortfolio: "Back to Portfolio",
+    printOrSavePdf: "Print / Save as PDF",
+    printHint: "Print dialog: Select \"Save as PDF\" & enable \"Background graphics\"",
+    previewBadge: "Printable CV (A4 · 2 Pages)",
+    pageLabel: "Page",
+    ofLabel: "of",
+    credentialsHeaderRight: "Education, Skills & Credentials",
+  },
 };
+
+export const printableCVData = printableCVDataEN;
